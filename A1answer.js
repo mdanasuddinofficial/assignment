@@ -9,9 +9,6 @@ function describeValue(data) {
     }
     return `${type} | ${tof}`;
 }
-console.log(describeValue(0));
-console.log(describeValue(NaN));
-console.log(describeValue(null));
 
 
 
@@ -47,10 +44,6 @@ function getDayType(day) {
     return "Invalid day";
     }
 }
-console.log(getDayType("Friday"));
-console.log(getDayType("friday"));
-console.log(getDayType("SUNDAY"));
-console.log(getDayType("Bandarban"));
 
 
 
@@ -69,13 +62,6 @@ function validateUsername(username) {
         return "Available";
     }
 }
-console.log(validateUsername("rahim123"));
-console.log(validateUsername("ab"));
-console.log(validateUsername("a b"));
-console.log(validateUsername("abcd"));
-console.log(validateUsername("rahim islam"));
-console.log(validateUsername("superadmin99"));
-console.log(validateUsername("Admin_Rahim"));
 
 
 
@@ -98,13 +84,6 @@ function getCngFare(distance, isNight=false, waitingMinutes=0) {
     const totalFare = regularFare + distanceCost + waitingCost;
     return totalFare;
 }
-console.log(getCngFare(2));
-console.log(getCngFare(1));
-console.log(getCngFare(5));
-console.log(getCngFare(10));
-console.log(getCngFare(5, false, 10));
-console.log(getCngFare(5, true));
-console.log(getCngFare(5, true, 10));
 
 
 
@@ -133,10 +112,3 @@ const getChaseVerdict = (target, scored, ballsLeft) => {
     // step 6 with template string
     return `Need ${runsNeeded} runs in ${ballsLeft} balls | ${verdict}`;
 };
-console.log(getChaseVerdict(200, 200, 12));
-console.log(getChaseVerdict(200, 190, 0));
-console.log(getChaseVerdict(100, 90, 12));
-console.log(getChaseVerdict(100, 80, 12));
-console.log(getChaseVerdict(100, 70, 12));
-console.log(getChaseVerdict(150, 149, 1));
-console.log(getChaseVerdict(150, 111, 1));
